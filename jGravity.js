@@ -146,8 +146,8 @@ function init() {
 
 	// init box2d
 	worldAABB = new b2AABB();
-	worldAABB.minVertex.Set(-200, -200);
-	worldAABB.maxVertex.Set( screen.width + 200, screen.height + 200);
+	worldAABB.minVertex.Set(-1000, -1000);
+	worldAABB.maxVertex.Set( screen.width + 1000, screen.height + 1000);
 
 	world = new b2World(worldAABB, new b2Vec2(0, 0), true);
 
